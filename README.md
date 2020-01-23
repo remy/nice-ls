@@ -10,9 +10,19 @@ function ls() {
 }
 ```
 
-Example:
+## Features
 
-![](https://cldup.com/5MBOrCmKlP.png)
+- Icons for known file and folder types
+- Recently modified shown as brighter timestamps
+- Readable file sizes by default
+- Colour coded read/write/execute flags
+- User permission are brighter than group and other
+- Folder block size ignored
+- Blocks hidden (never sure what they mean!)
+
+## Screenshot
+
+![](https://cloudup.com/cCOEpIYrakT+)
 
 ## Prerequisites
 

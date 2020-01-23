@@ -1,0 +1,19 @@
+{
+  "name": "nice-ls",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": { "nice-ls": "./index.js" },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "colorette": "^1.0.1",
+    "columnify": "^1.5.4",
+    "get-stdin": "^6.0.0",
+    "pretty-bytes": "^5.1.0"
+  }
+}

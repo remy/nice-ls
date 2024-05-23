@@ -1,6 +1,6 @@
 {
   "name": "nice-ls",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Makes `ls` look nice, importantly (and ideally), without changing the `ls` command.",
   "main": "index.js",
   "bin": {
@@ -13,12 +13,11 @@
   "author": "Remy Sharp (https://remysharp.com)",
   "license": "ISC",
   "dependencies": {
-    "colorette": "^1.0.1",
+    "colorette": "^2.0.20",
     "columnify": "^1.5.4",
     "get-stdin": "^6.0.0",
     "pretty-bytes": "^5.1.0"
   },
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/remy/nice-ls.git"

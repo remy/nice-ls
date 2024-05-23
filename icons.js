@@ -17,6 +17,15 @@ const folderAliases = {
   include: 'config',
 };
 
+const types = {
+  l: '\uf481',
+  d: '\uf115',
+  s: '\ueedf',
+  p: '\udb81\udfe5',
+  b: '\ue0d1',
+  c: '\uea8c',
+};
+
 const files = {
   '.atom': '\ue764',
   '.git': '\uf1d3',
@@ -199,4 +208,5 @@ module.exports = {
   fileAliases,
   folders,
   folderAliases,
+  types,
 };

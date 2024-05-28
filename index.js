@@ -20,7 +20,7 @@ now.month1 = months[date.getMonth()];
 const byteMultiplier = (s) => {
   return (
     {
-      K: 1024 ,
+      K: 1024,
       M: 1024 * 1024,
       G: 1024 * 1024 * 1024,
       T: 1024 * 1024 * 1024 * 1024,
@@ -31,7 +31,7 @@ const byteMultiplier = (s) => {
 const perms = /([dlcbps-][rwx\-]{9,9}[@\+]{0,1})/;
 
 const lineMatch =
-  /([dlcbps-][rwx\-]{9,9}[@\+]{0,1})\s+(\d+)\s+(\w+)\s+(\w+)\s+([\d\.KBMGTxa-f]+)\s+(\w+)\s+(\d+)\s+([\d:]+)\s(.*)/g;
+  /([dlcbps-][rwx\-]{9,9}[@\+]{0,1})\s+(\d+)\s+(\w+)\s+(\w+)\s+([\d\.KBMGTxa-f]+)\s+(\d\w+)\s+(\w+)\s+([\d:]+)\s(.*)/g;
 let i = 0;
 
 function col(s, condition, c, b) {
@@ -47,7 +47,7 @@ function line(line) {
 
   line.replace(
     lineMatch,
-    (all, perms, blocks, user, group, size, month, day, year, filename) => {
+    (all, perms, blocks, user, group, size, day, month, year, filename) => {
       let [type, ...rest] = perms.split('');
 
       const res = {};

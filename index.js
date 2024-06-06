@@ -31,7 +31,7 @@ const byteMultiplier = (s) => {
 const perms = /([dlcbps-][rwx\-]{9,9}[@\+]{0,1})/;
 
 const lineMatch =
-  /([dlcbps-][rwx\-]{9,9}[@\+]{0,1})\s+(\d+)\s+(\w+)\s+(\w+)\s+([\d\.KBMGTxa-f]+)\s+(\d\w+)\s+(\w+)\s+([\d:]+)\s(.*)/g;
+  /([dlcbps-][rwx\-]{9,9}[@\+]{0,1})\s+(\d+)\s+(\w+)\s+(\w+)\s+([\d\.KBMGTxa-f]+)\s+([\d\w]+)\s+(\w+)\s+([\d:]+)\s(.*)/g;
 let i = 0;
 
 function col(s, condition, c, b) {
@@ -52,6 +52,12 @@ function line(line) {
 
       const res = {};
       match = true;
+
+      if (/^\d+$/.test(month)) {
+        const tmp = month;
+        month = day;
+        day = tmp;
+      }
 
       const permissions = [];
       const isNotFile = type !== '-';
